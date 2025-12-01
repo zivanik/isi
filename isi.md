@@ -232,3 +232,19 @@ heapq.heappush(heap, (priority, counter, data))
 | predict() | predpovede | X_test |
 | Pipeline.fit() | fitne všetky kroky | X_train, y_train |
 | Pipeline.predict() | transformuje + predikuje | X_test |
+
+## 🌟 ZHRNUTIE
+| Model | Najdôležitejšie parametre |
+|--------|-----------------------------|
+| DecisionTreeClassifier | criterion, max_depth, random_state |
+| DecisionTreeRegressor | criterion, max_depth, random_state |
+| RandomForestClassifier | n_estimators, max_features, max_depth, random_state |
+| RandomForestRegressor | n_estimators, max_depth, random_state |
+| LogisticRegression | max_iter, C, penalty, solver, random_state |
+| SVC | kernel, C, gamma, random_state |
+| SVR | kernel, C, epsilon |
+| KNeighborsClassifier | n_neighbors, metric, weights |
+| SelectKBest | score_func, k |
+| GridSearchCV | param_grid, scoring, cv, n_jobs, verbose |
+| RepeatedStratifiedKFold | n_splits, n_repeats, random_state |
+| KFold | n_splits, shuffle, random_state |
