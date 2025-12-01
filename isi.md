@@ -233,18 +233,25 @@ heapq.heappush(heap, (priority, counter, data))
 | Pipeline.fit() | fitne všetky kroky | X_train, y_train |
 | Pipeline.predict() | transformuje + predikuje | X_test |
 
-## 🌟 ZHRNUTIE
-| Model | Najdôležitejšie parametre |
-|--------|-----------------------------|
-| DecisionTreeClassifier | criterion, max_depth, random_state |
-| DecisionTreeRegressor | criterion, max_depth, random_state |
-| RandomForestClassifier | n_estimators, max_features, max_depth, random_state |
-| RandomForestRegressor | n_estimators, max_depth, random_state |
-| LogisticRegression | max_iter, C, penalty, solver, random_state |
-| SVC | kernel, C, gamma, random_state |
-| SVR | kernel, C, epsilon |
-| KNeighborsClassifier | n_neighbors, metric, weights |
-| SelectKBest | score_func, k |
-| GridSearchCV | param_grid, scoring, cv, n_jobs, verbose |
-| RepeatedStratifiedKFold | n_splits, n_repeats, random_state |
-| KFold | n_splits, shuffle, random_state |
+## 🧭 ZHRNUTIE PRE PREPROCESSORY A MODELY
+
+| Typ | Trieda | Dôležité parametre |
+|------|---------|-------------------|
+| Imputácia | SimpleImputer | strategy, fill_value |
+| Škálovanie | StandardScaler | with_mean, with_std |
+| Škálovanie | MinMaxScaler | feature_range |
+| Normalizácia | Normalizer | norm ('l1', 'l2', 'max') |
+| Kódovanie | LabelEncoder | — (žiadne parametre) |
+| Kódovanie | OneHotEncoder | handle_unknown, sparse_output, drop |
+| Strom | DecisionTreeClassifier | criterion, max_depth, random_state |
+| Strom | DecisionTreeRegressor | criterion, max_depth, random_state |
+| Les | RandomForestClassifier | n_estimators, max_features, max_depth, random_state |
+| Les | RandomForestRegressor | n_estimators, max_depth, random_state |
+| Regresia | LogisticRegression | max_iter, C, penalty, solver, random_state |
+| SVM | SVC | kernel, C, gamma, random_state |
+| SVM | SVR | kernel, C, epsilon |
+| KNN | KNeighborsClassifier | n_neighbors, metric, weights |
+| Výber | SelectKBest | score_func, k |
+| Vyhľadávanie | GridSearchCV | param_grid, scoring, cv, n_jobs, verbose |
+| Validácia | RepeatedStratifiedKFold | n_splits, n_repeats, random_state |
+| Validácia | KFold | n_splits, shuffle, random_state |
